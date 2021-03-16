@@ -1,86 +1,67 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
 }
 
 .max-width-wrapper {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-.intro-chunk {
-  margin: 100px 0;
+header {
+  padding: 48px 0;
 }
 
 .title {
-  margin: 50px 0;
+  margin: 24px 0;
 }
 
-strong {
-  color: hsl(146, 50%, 36%);
+.intro-chunk {
+  max-width: 400px;
+}
+
+.intro-chunk strong {
+  color: hsl(160, 100%, 30%);
 }
 
 main {
-  min-height: 100%;
-  background-color: hsl(0,0%,50%);
-  border-top: 5px solid hsl(0,0%,30%);
-  padding-top: 100px;
+  background-color: hsl(0,0%,60%);
+  border-top: 8px solid hsl(0,0%,40%);
+  padding: 96px 0;
 }
 
 .card {
   background-color: white;
-  padding: 1px 20px;
-  border-bottom: 5px solid hsl(0,0%,30%);
+  padding: 24px;
+  margin: -24px;
+  border-bottom: 8px solid hsl(0,0%,40%);
 }
 
 .indented-heading {
   width: -moz-fit-content;
   width: fit-content;
-  padding: 20px 30px;
+  padding: 16px 32px;
+  margin-top: -16px;
   margin-left: -32px;
-  background-color: hsl(43,80%, 45%);
-  border-bottom: 5px solid hsl(43, 74%, 30%);
+  background-color: hsl(45, 100%, 50%);
+  border-bottom: 8px solid hsl(45, 100%, 40%);
 }
 
-@media (max-width: 480px) {
-  .max-width-wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .card {
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-
-  .indented-heading {
-    margin-left: -20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .max-width-wrapper {
-    max-width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .card {
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-
-  .indented-heading {
-    margin-left: -20px;
-  }
+.card p:last-child {
+  margin-bottom: -8px;
 }
